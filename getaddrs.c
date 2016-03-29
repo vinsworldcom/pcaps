@@ -1,6 +1,5 @@
 #define _WIN32_WINNT 0x0601 // FirstGatewayAddress as member of PIP_ADAPTER_ADDRESSES
 
-#include <winsock2.h>
 #include <ws2tcpip.h>
 #include <iphlpapi.h>
 #include <stdio.h>

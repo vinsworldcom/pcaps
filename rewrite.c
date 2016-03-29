@@ -4,7 +4,6 @@
 #include <ctype.h>
 #include <strings.h>
 
-#include "pcaps.h"
 #include "getaddrs.h" // ntop() / pton() in case API doesn't have it ... like mine
 #include "hexString.h"
 
@@ -19,12 +18,7 @@ int checkPacketNotLen( int slen, int len )
 {
     if ( slen < len )
     {
-        fprintf( stderr,
-             "Packet not long enough (%i) - `%i'\n", len, slen );
-/*
-        if ( !cCont )
-            exit(1);
-*/
+        fprintf( stderr, "Packet not long enough (%i) - `%i'\n", len, slen );
         return 1;
     }
     return 0;

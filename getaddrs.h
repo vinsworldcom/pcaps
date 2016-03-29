@@ -1,6 +1,8 @@
 #ifndef GETADDRS_H
 #define GETADDRS_H
 
+#include <winsock2.h>
+
 typedef struct getaddrs {
     char mac[13];      // +1 for \0
     char mac_gw[13];   // +1 for \0
@@ -23,4 +25,4 @@ WINSOCK_API_LINKAGE INT WSAAPI inet_pton(INT, PCSTR, PVOID);
 #define InetPtonA inet_pton
 #endif
 
-#endif /*GETADDRS_H*/
+#endif

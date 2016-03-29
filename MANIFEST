@@ -9,6 +9,8 @@ MANIFEST
 pcaps.c
 pcaps.dev
 pcaps.h
+pcapsend.c
+pcapsend.h
 pcaps_private.h
 pcaps_private.rc
 README.txt
@@ -21,4 +23,3 @@ netinet\ip.h
 netinet\ip6.h
 netinet\tcp.h
 netinet\udp.h
-

@@ -1,19 +1,15 @@
 # Project file names
 PROJECT  = pcaps
 
-DEPS     = dgets hexString
+DEPS     = dgets getaddrs hexString pcapsend rewrite
 INC      = -I..\WpdPack\Include
-LIBS     = -L..\WpdPack\Lib\x64 -lwpcap
-DEF      = -DADDRS
+LIBS     = -L..\WpdPack\Lib\x64 -lwpcap -liphlpapi -lws2_32
+DEF      = 
 # -DDEBUG
 
 ##########
 
 CBASE    = $(PROJECT)
-ifdef DEF
-DEPS    += getaddrs rewrite
-LIBS    += -liphlpapi -lws2_32
-endif
 
   # C
 CDIR     = 
